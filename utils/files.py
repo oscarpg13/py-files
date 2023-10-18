@@ -1,5 +1,5 @@
 def readFile(name):
-  # return file
+  # return file gilipollas
   return ""
 
 def wordCount(text):
