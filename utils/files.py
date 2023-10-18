@@ -1,15 +1,18 @@
 def readFile(name):
-  # return file gilipollas
-  return ""
+  with open(name,"r") as file:
+    return file.read()
 
-def wordCount(text):
-  # return count
-  return 0
+def wordCount(texto):
+   return len(texto.split())
 
-def uniqueWordCount(text):
-  # return count
-  return 0
+def uniqueWordCount(texto):
+  return len(set(texto.split()))
 
-def findContent(text, word):
-  # return count
-  return 0
+def findContent(texto, palabra):
+  return texto.count(palabra)
+
+import re
+def changeQuijoteToQuixote(texto):
+  texto_original = r'Quijote'
+  cambio="Quixote"
+  return re.sub(texto_original,cambio,texto) 
